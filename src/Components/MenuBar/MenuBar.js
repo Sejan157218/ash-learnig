@@ -46,7 +46,7 @@ const MenuBar = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Link to="/home" className="nav-2-nav fw-bold fs-1"><li>Ash Learning</li></Link>
+                            <Link to="/" className="nav-2-nav fw-bold fs-1"><li>Ash Learning</li></Link>
 
                         </Nav>
                         <Nav

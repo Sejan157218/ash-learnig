@@ -18,7 +18,7 @@ const Home = () => {
                 <h2>OUR SERVISES</h2>
 
                 <Container>
-                    <Row xs={1} md={4} className="g-4">
+                    <Row xs={1} md={4} className="g-4 mt-3">
                         {services.slice(0, 4).map(service => (
                             <Col className="ourserviceses-card">
                                 <Card className="h-100">

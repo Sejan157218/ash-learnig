@@ -16,7 +16,7 @@ const OurServiceses = () => {
             <h2>OUR SERVISES</h2>
 
             <Container>
-                <Row xs={1} md={4} className="g-4">
+                <Row xs={1} md={4} className="g-4 mt-3">
                     {services.map(service => (
                         <Col className="ourserviceses-card">
                             <Card className="h-100">
