@@ -1,0 +1,51 @@
+/* Navigation 1 */
+.menubar{
+    position: fixed;
+    width: 100%;
+}
+.nav-container{
+    background-color: #1f1c1c ;
+    
+}
+
+.nav-text{
+    color: #dadada !important;
+}
+
+.search-box{
+    background-color: #171515;
+}
+
+.btn-color{
+    background-color: #2ac465;
+    color: #ffffff;
+
+}
+.btn-color:hover{
+    background-color: #24ab58;
+}
+
+
+/* Navigation 2 */
+.nav-2{
+    background-color: rgba(0,0,0,0.75);
+}
+
+    
+
+
+.nav-2-nav{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    color: #ffffff;
+
+}
+.nav-2-nav :hover{
+    color: #fc6b4f;
+}
+
+.Nav :hover {
+    background-color: #fc6b4f;
+  }
+
