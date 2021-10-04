@@ -1,0 +1,35 @@
+.footer-container{
+    background-color: #1f1c1c;
+}
+
+.footer-Cart{
+    background-color: #1f1c1c; 
+    border: none;
+    color: #b6afaf;
+}
+
+.footer-icon{
+    color: #fc6b4f;
+}
+
+
+/* footer Nav */
+.footer-nav{
+    color: #ffffff;
+}
+.footer-navlink{
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: .75rem;
+}
+.footer-navlink:hover{
+    color: #2ac465;
+}
+
+.footer-icon-social{
+    color: ;
+}
+
+.footer-last{
+    background-color:#171515;
+}

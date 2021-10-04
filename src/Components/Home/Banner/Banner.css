@@ -1,0 +1,19 @@
+.img-height{
+    height: 680px;
+}
+.carousel-caption{
+    bottom:10rem;
+}
+.banner-title{
+    font-size:4rem;
+}
+
+.banner-btn{
+    background-color: #2ac465;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+}
+.banner-btn:hover{
+    background-color: #24ab58;
+}
