@@ -27,18 +27,17 @@ const OurServiceses = () => {
                                         {service.title}
                                     </Card.Text>
                                 </Card.Body>
+                                <Card.Footer>
+                                    <p className="d-flex justify-content-between"><small className="text-muted">started on 01.01.2022</small><small className=" price">$ {service.price}</small> </p>
+                                </Card.Footer>
                             </Card>
-
-                            <Card.Footer>
-                                <p className="d-flex justify-content-between"><small className="text-muted">started on 01.01.2022</small><small className=" price">$2000</small> </p>
-                            </Card.Footer>
 
                             <Card className="content h-100 ">
                                 <Card.Body className="hover-card">
-                                    <Card.Header>{service.title}</Card.Header>
+                                    <Card.Header><h5>{service.title}</h5></Card.Header>
                                     <Card.Text>
-                                        This is a longer card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.
+                                        <p>This is a longer card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
                                     </Card.Text>
                                     <Link to="/#"><Button className="btn-service me-1">MORE INFO</Button></Link>
                                     <Link to="/#"><Button className="btn-service"><FontAwesomeIcon icon={faShoppingCart} /></Button></Link>
