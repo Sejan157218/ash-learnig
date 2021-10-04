@@ -2,8 +2,8 @@ import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import img from '../../../Image/carocel.jpg'
-import img1 from '../../../Image/carosel1.jpg'
+import img from '../../Image/carocel.jpg'
+import img1 from '../../Image/carosel1.jpg'
 import "./Banner.css"
 
 const Banner = () => {

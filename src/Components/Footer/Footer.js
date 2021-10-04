@@ -12,22 +12,21 @@ const Footer = () => {
             <div className="footer-container">
                 <Container className="footer-container">
                     <Row className="justify-content-md-center  pt-5">
-                        <Col xs={4}>
+                        <Col xs={12} md={4}>
                             <Card className="footer-Cart">
-                                <Card.Img variant="top" src="holder.js/100px160" />
                                 <Card.Body>
-                                    <Card.Title>Card title</Card.Title>
+                                    <Card.Title>Have a Questions?</Card.Title>
                                     <Card.Text>
                                         This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.
-                                        <p><span><FontAwesomeIcon icon={faAddressCard} className="me-1 mt-4 footer-icon" />28 tenth Avenue Dhanmondi, Dhaka</span></p>
+                                        <p><span><FontAwesomeIcon icon={faAddressCard} className="me-1 mt-4 footer-icon" />	203 Fake St. Mountain View, San Francisco, California, USA</span></p>
                                         <p><span><FontAwesomeIcon icon={faEnvelope} className="me-1 footer-icon" />info@gmail.com</span></p>
-                                        <p><span><FontAwesomeIcon icon={faPhoneVolume} className="me-1 footer-icon" />880 1970901365</span></p>
+                                        <p><span><FontAwesomeIcon icon={faPhoneVolume} className="me-1 footer-icon" />1 (888) 1970901365</span></p>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col xs={4} className="footer-nav">
+                        <Col xs={12} md={4} className="footer-nav">
                             <h1>Link</h1>
                             <Nav className="flex-column">
                                 <NavLink className="footer-navlink" to="/home">Home</NavLink>
@@ -39,7 +38,7 @@ const Footer = () => {
                             </Nav>
 
                         </Col>
-                        <Col xs={4} className="footer-nav ">
+                        <Col xs={12} md={4} className="footer-nav ">
                             <h1>Newsletter</h1>
 
                             <InputGroup className="mt-3">

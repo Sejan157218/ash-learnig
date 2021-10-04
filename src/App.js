@@ -8,6 +8,8 @@ import Service from "./Components/Service/Service";
 import NotFound from "./Components/NotFound/NotFound";
 import MenuBar from './Components/MenuBar/MenuBar';
 import Footer from './Components/Footer/Footer';
+import Blogs from './Components/Blogs/Blogs';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -27,6 +29,12 @@ function App() {
           </Route>
           <Route exact path="/service">
             <Service></Service>
+          </Route>
+          <Route exact path="/blogs">
+            <Blogs></Blogs>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
           </Route>
           <Route exact path="*">
             <NotFound></NotFound>

@@ -19,7 +19,7 @@ const MenuBar = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Link to="" className="ms-5  text-decoration-none nav-text"><FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />28 tenth Avenue Dhanmondi, Dhaka</Link>
+                            <Link to="" className="ms-5  text-decoration-none nav-text"><FontAwesomeIcon icon={faMapMarkerAlt} className="me-1" />203 Fake St. Mountain View, San Francisco</Link>
                             <Link to="" className="ms-5  text-decoration-none nav-text"><FontAwesomeIcon icon={faEnvelope} className="me-1" />info@gmail.com</Link>
 
                         </Nav>
@@ -59,13 +59,13 @@ const MenuBar = () => {
                             <Link to="/service" className="nav-2-nav">
                                 <li>Service</li>
                             </Link>
-                            <Link to="/service" className="nav-2-nav">
+                            <Link to="/blogs" className="nav-2-nav">
                                 <li>Blogs</li>
                             </Link>
-                            <Link to="/service" className="nav-2-nav">
+                            <Link to="/contact" className="nav-2-nav">
                                 <li>Contact</li>
                             </Link>
-                            <Link to="/service" className="nav-2-nav">
+                            <Link to="/#" className="nav-2-nav">
                                 <FontAwesomeIcon icon={faShoppingBag} className="me-1" />
                             </Link>
                         </Nav>

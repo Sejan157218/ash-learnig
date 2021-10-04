@@ -1,9 +1,19 @@
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import notImg from "../../Image/pagenotfound.jpg";
+import "./NotFound.css"
 
 const NotFound = () => {
     return (
-        <div>
-            <h1>this is notfound</h1>
+        <div className="text-center">
+            <img className="img-notfound" src={notImg} alt="" />
+            <h1>
+                <Link to="/home">
+                    <Button className="not-btn mb-5 mt-2">Back to Home</Button>
+                </Link>
+            </h1>
+
         </div>
     );
 };
