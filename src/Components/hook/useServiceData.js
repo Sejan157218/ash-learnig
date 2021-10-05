@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const useServiceData = () => {
     const [services, setService] = useState([]);
     useEffect(() => {
-        fetch('./ServiceData.json')
+        fetch('./ServiceData.JSON')
             .then(res => res.json())
             .then(data => setService(data))
     }, [])

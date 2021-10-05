@@ -6,7 +6,7 @@ import './OurServiceses.css'
 import inade from "../../Image/carocel.jpg"
 import { Link } from 'react-router-dom';
 import Button from '@restart/ui/esm/Button';
-import useServiceData from '../../useServiceData';
+import useServiceData from '../hook/useServiceData';
 
 const OurServiceses = () => {
     const [services, setService] = useServiceData();
@@ -39,7 +39,7 @@ const OurServiceses = () => {
                                         <p>This is a longer card with supporting text below as a natural
                                             lead-in to additional content. This content is a little bit longer.</p>
                                     </Card.Text>
-                                    <Link to="/#"><Button className="btn-service me-1">MORE INFO</Button></Link>
+                                    <Link to={`/services/${service.key}`}><Button className="btn-service me-1">MORE INFO</Button></Link>
                                     <Link to="/#"><Button className="btn-service"><FontAwesomeIcon icon={faShoppingCart} /></Button></Link>
                                 </Card.Body>
                             </Card>

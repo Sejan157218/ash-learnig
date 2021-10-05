@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import blog1 from "../../Image/blog1.png"
-import useBlogData from '../../useBlogData';
+import useBlogData from '../hook/useBlogData';
 import './Blogs.css';
 
 const Blogs = () => {

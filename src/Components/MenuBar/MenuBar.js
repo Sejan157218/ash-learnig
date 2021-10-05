@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Container, Form, Nav, Navbar } from 'react-bootstrap';
+import { Badge, Container, Form, Nav, Navbar } from 'react-bootstrap';
 import "./MenuBar.css";
 import { Link } from 'react-router-dom';
 
@@ -67,6 +67,7 @@ const MenuBar = () => {
                             </Link>
                             <Link to="/#" className="nav-2-nav">
                                 <FontAwesomeIcon icon={faShoppingBag} className="me-1" />
+                                <Badge className="badge">0</Badge>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>

@@ -46,7 +46,6 @@
     color: #fc6b4f;
 }
 
-.Nav :hover {
-    background-color: #fc6b4f;
-  }
-
+.badge{
+    background-color: #24ab58!important;
+}
