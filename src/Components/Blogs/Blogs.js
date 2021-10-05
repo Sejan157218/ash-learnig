@@ -7,7 +7,7 @@ import './Blogs.css';
 const Blogs = () => {
     const [blogs, setBlogs] = useBlogData();
     return (
-        <div >
+        <div className=" text-center mb-5">
 
             <Container className=" text-center">
                 <div className=" pt-5">

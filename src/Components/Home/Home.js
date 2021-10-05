@@ -15,7 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <div className="ourserviceses-container mb-4">
                 <p className="pt-5">THE BEST CHOISE</p>
-                <h2>OUR SERVISES</h2>
+                <h2>OUR POPULAR SERVICES</h2>
 
                 <Container>
                     <Row xs={1} md={4} className="g-4 mt-3">

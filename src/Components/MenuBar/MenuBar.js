@@ -59,7 +59,7 @@ const MenuBar = () => {
                             <Link to="/service" className="nav-2-nav">
                                 <li>Service</li>
                             </Link>
-                            <Link to="/blogs" className="nav-2-nav">
+                            <Link to="/blog" className="nav-2-nav">
                                 <li>Blogs</li>
                             </Link>
                             <Link to="/contact" className="nav-2-nav">

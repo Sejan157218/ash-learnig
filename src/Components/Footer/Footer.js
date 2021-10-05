@@ -29,11 +29,11 @@ const Footer = () => {
                         <Col xs={12} md={4} className="footer-nav">
                             <h1>Link</h1>
                             <Nav className="flex-column">
-                                <NavLink className="footer-navlink" to="/home">Home</NavLink>
-                                <NavLink className="footer-navlink" to="/home">About</NavLink>
-                                <NavLink className="footer-navlink" to="/home">Service</NavLink>
-                                <NavLink className="footer-navlink" to="/home">Blog</NavLink>
-                                <NavLink className="footer-navlink" to="/home">Contact</NavLink>
+                                <NavLink className="footer-navlink" to="/">Home</NavLink>
+                                <NavLink className="footer-navlink" to="/about">About</NavLink>
+                                <NavLink className="footer-navlink" to="/service">Service</NavLink>
+                                <NavLink className="footer-navlink" to="/blog">Blog</NavLink>
+                                <NavLink className="footer-navlink" to="/contact">Contact</NavLink>
 
                             </Nav>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                 <Container >
                     <Row className="">
                         <Col sm={8} className="footer-nav">ASH © 2021 All rights reserved. Terms of use and Privacy Policy</Col>
-                        <Col sm={4}></Col>
+                        <Col sm={4} className="social-icon"><i class="fab fa-facebook-f me-3"></i><i class="fab fa-github me-3"></i><i class="fab fa-twitter me-3"></i><i class="fab fa-linkedin-in me-3"></i></Col>
                     </Row>
                 </Container>
             </div>
