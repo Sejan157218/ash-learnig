@@ -8,12 +8,18 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import useServiceData from '../hook/useServiceData';
 import { useContext } from 'react';
 import { ServiceContext } from '../../App';
+import { addToData } from '../../LocalStorage';
 
 
 const Home = () => {
     const [services, setService] = useServiceData();
     const [serviceDetails, setserviceDetails] = useContext(ServiceContext);
     setserviceDetails(services);
+
+    const handlerToAdd = item => {
+        item.quantity = 1
+        addToData(item.key);
+    }
     return (
         <div>
             <Banner></Banner>
@@ -52,7 +58,7 @@ const Home = () => {
                                         <Link to={`/services/${service.key}`} >
                                             <Button className="btn-service me-1">MORE INFO</Button>
                                         </Link>
-                                        <Link to="/#"><Button className="btn-service"><FontAwesomeIcon icon={faShoppingCart} /></Button></Link>
+                                        <Button className="btn-service" onClick={() => handlerToAdd(service)}><FontAwesomeIcon icon={faShoppingCart} /></Button>
                                     </Card.Body>
                                 </Card>
 

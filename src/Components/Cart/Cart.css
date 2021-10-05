@@ -1,0 +1,14 @@
+.cart-img{
+    width: 5rem;
+}
+.cart-title{
+    display: flex;
+}
+.cart-card{
+    display: flex;
+}
+.cart-btn{
+    border: none;
+    background-color: #fc6b4f;
+    color: blanchedalmond;
+}

@@ -7,9 +7,14 @@ import inade from "../../Image/carocel.jpg"
 import { Link } from 'react-router-dom';
 import Button from '@restart/ui/esm/Button';
 import useServiceData from '../hook/useServiceData';
+import { addToData } from '../../LocalStorage';
 
 const OurServiceses = () => {
     const [services, setService] = useServiceData();
+    const handlerToAdd = item => {
+        item.quantity = 1
+        addToData(item.key);
+    }
     return (
         <div className="ourserviceses-container mb-4">
             <p className="pt-5">THE BEST CHOISE</p>
@@ -40,7 +45,7 @@ const OurServiceses = () => {
                                             lead-in to additional content. This content is a little bit longer.</p>
                                     </Card.Text>
                                     <Link to={`/services/${service.key}`}><Button className="btn-service me-1">MORE INFO</Button></Link>
-                                    <Link to="/#"><Button className="btn-service"><FontAwesomeIcon icon={faShoppingCart} /></Button></Link>
+                                    <Button className="btn-service" onClick={() => handlerToAdd(service)}><FontAwesomeIcon icon={faShoppingCart} /></Button>
                                 </Card.Body>
                             </Card>
 

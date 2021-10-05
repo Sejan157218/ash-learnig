@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import blog1 from "../../Image/blog1.png"
 import useBlogData from '../hook/useBlogData';
 import './Blogs.css';
@@ -10,9 +11,9 @@ const Blogs = () => {
         <div className=" text-center mb-5">
 
             <Container className=" text-center">
-                <div className=" pt-5">
-                    <h1 className="blogs-h1">Home </h1>
-                    <h5 className="blogs-h5"> >OUR BLOG> </h5>
+                <div className="blog-header mb-3">
+                    <Link to="/"><h1 className="blogs-h1">Home </h1></Link>
+                    <h5 className="blogs-h5"> >OUR BLOGS> </h5>
                 </div>
                 <Row
                     xs={1} md={3} className="g-4">

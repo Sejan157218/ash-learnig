@@ -18,9 +18,10 @@ import { useState } from 'react';
 export const ServiceContext = createContext('service');
 function App() {
   const [serviceDetails, SetserviceDetails] = useState([]);
+  const [cartQuantity, SetcartQuantity] = useState([]);
   // SetserviceDetails(array);
   return (
-    <ServiceContext.Provider value={[serviceDetails, SetserviceDetails]}>
+    <ServiceContext.Provider value={[serviceDetails, SetserviceDetails, cartQuantity, SetcartQuantity]}>
       <div className="">
         <Router>
           <MenuBar />

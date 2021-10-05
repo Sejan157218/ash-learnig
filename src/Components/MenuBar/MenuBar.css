@@ -49,3 +49,6 @@
 .badge{
     background-color: #24ab58!important;
 }
+.offcanvas{
+    z-index: 20000;
+}

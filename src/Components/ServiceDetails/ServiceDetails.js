@@ -13,7 +13,6 @@ const ServiceDetails = () => {
     const [serviceDetails] = useContext(ServiceContext);
     const { serviceId } = useParams();
     const findService = serviceDetails.find(service => service.key === serviceId);
-    console.log(findService);
 
     return (
         <div className="container">

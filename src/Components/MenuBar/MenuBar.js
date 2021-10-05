@@ -1,12 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope, faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import Button from '@restart/ui/esm/Button';
-import React from 'react';
-import { Badge, Container, Form, Nav, Navbar } from 'react-bootstrap';
+import React, { useContext, useState } from 'react';
+import { Badge, Container, Form, Nav, Navbar, Offcanvas } from 'react-bootstrap';
 import "./MenuBar.css";
 import { Link } from 'react-router-dom';
+import { ChatRight } from 'react-bootstrap-icons';
+import Cart from '../Cart/Cart';
+import { ServiceContext } from '../../App';
 
 const MenuBar = () => {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    // const [cartQuantity] = useContext(ServiceContext);
+
     return (
         <div className="menubar">
             {/*  Navigation   */}
@@ -66,13 +75,23 @@ const MenuBar = () => {
                                 <li>Contact</li>
                             </Link>
                             <Link to="/#" className="nav-2-nav">
-                                <FontAwesomeIcon icon={faShoppingBag} className="me-1" />
+                                <FontAwesomeIcon icon={faShoppingBag} className="me-1" onClick={handleShow} />
                                 <Badge className="badge">0</Badge>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            {/* Ofcanvace */}
+            <Offcanvas show={show} onHide={handleClose} className="offcanvas">
+                <Offcanvas.Header closeButton>
+                    <Offcanvas.Title>My Cart</Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                    <Cart></Cart>
+                </Offcanvas.Body>
+            </Offcanvas>
+
         </div>
 
     );
